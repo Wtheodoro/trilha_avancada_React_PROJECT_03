@@ -39,9 +39,10 @@ const Foods = () => {
       <ul>
           {
             category?.map((i: CategoriesType) => (
-              <>
+              <div key={i.idCategory} className="catalog">
+              <img src={i.strCategoryThumb} alt={i.strCategory}/>
               <li onClick={() => setCategoryName(i.strCategory)}>{i.strCategory}</li>
-              </>
+              </div>
             ))
           }
       </ul>

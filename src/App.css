@@ -125,3 +125,9 @@
 .beer-list li:hover {
   color: #000
 }
+
+.catalog img {
+  width: 50px;
+  opacity: 0.8;
+  border-radius: 50%;
+}
